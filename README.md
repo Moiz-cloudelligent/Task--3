@@ -1,4 +1,4 @@
-# Cloudelligent AWS Infrastructure Project - Beginner's Guide
+# TASK 3 - Beginner's Guide
 
 A complete beginner-friendly guide to building a three-tier web application infrastructure on AWS using Terraform. This project demonstrates how to create a production-ready cloud infrastructure with automatic deployment.
 
