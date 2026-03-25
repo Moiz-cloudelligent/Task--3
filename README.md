@@ -281,20 +281,7 @@ mysql -h <database-endpoint> -u admin -p
 4. Least Privilege - Each component has minimum required permissions
 5. Backups - Database backs up daily for 7 days
 
-## Cost Considerations
 
-This infrastructure costs money to run:
-- Load Balancer: about $16/month
-- 2 EC2 t2.micro instances: Free tier eligible
-- NAT Gateway: about $32/month
-- RDS MySQL t3.micro: about $20/month
-- Data transfer: Variable
-
-Total: about $40-50/month if running 24/7
-
-To avoid charges:
-- Run 'terraform destroy' when not using
-- Or use AWS Free Tier (limited to 12 months)
 
 ## Troubleshooting
 
@@ -327,12 +314,7 @@ Solution: Use your own repository or ask for contributor access
 10. Connects everything together
 11. Saves infrastructure details in terraform.tfstate
 
-## Learning Resources
 
-- Terraform Documentation: https://www.terraform.io/docs
-- AWS Documentation: https://docs.aws.amazon.com/
-- AWS Terraform Provider: https://registry.terraform.io/providers/hashicorp/aws/latest
-- Terraform Best Practices: https://developer.hashicorp.com/terraform/cloud-docs/recommended-practices
 
 ## Next Steps After Deployment
 
@@ -345,22 +327,7 @@ Now that you have basic infrastructure:
 5. Scale Up - Add more instances or database replicas
 6. Automate - Set up CI/CD pipelines for deployments
 
-## Common Questions
 
-Q: Can I modify the number of EC2 instances?
-A: Yes! Edit modules/compute/variables.tf and change instance_count
-
-Q: How do I add HTTPS/SSL?
-A: Create an ACM certificate and add HTTPS listener to ALB
-
-Q: Can I resize the database?
-A: Yes, modify instance_class in modules/database/variables.tf
-
-Q: How long does deployment take?
-A: Typically 10-15 minutes (mostly waiting for RDS)
-
-Q: Can multiple people use this project?
-A: Yes, set up S3 remote backend for shared state management
 
 ## File Descriptions
 
