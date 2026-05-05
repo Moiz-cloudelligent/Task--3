@@ -2,6 +2,9 @@
 
 A complete beginner-friendly guide to building a three-tier web application infrastructure on AWS using Terraform. This project demonstrates how to create a production-ready cloud infrastructure with automatic deployment.
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b81300f1-0122-446e-81a6-8a5862d4791e" />
+
+
 ## What This Project Does
 
 This project automatically creates and deploys a complete three-tier cloud infrastructure on AWS. Think of it like building a restaurant with three separate departments:
